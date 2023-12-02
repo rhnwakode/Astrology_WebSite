@@ -1,0 +1,37 @@
+<div class="flex flex-col min-h-full">
+    <nav>
+        <mat-toolbar color="primary" class="flex">
+            <button mat-icon-button *ngIf="screenWidth < 768" (click)="showMenu = !showMenu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span class="text-red-700 text-3xl">Kundali</span>
+            <span class="spacer flex-auto"></span>
+            <div *ngIf="screenWidth >= 768" class="lg:text-xl transition-all">
+                <button mat-button color="accent" routerLink="home" routerLinkActive="active"
+                    ariaCurrentWhenActive="page" class="text-gray-100 hover:text-gray-300">Home</button>
+                <button mat-button color="accent" routerLink="aboutUs" routerLinkActive="active"
+                    ariaCurrentWhenActive="page" class="text-gray-100 hover:text-gray-300">About</button>
+                <button mat-button color="accent" routerLink="services" routerLinkActive="active"
+                    ariaCurrentWhenActive="page" class="text-gray-100 hover:text-gray-300">Services</button>
+                <button mat-button color="accent" routerLink="ContactUs" routerLinkActive="active"
+                    ariaCurrentWhenActive="page" class="text-gray-100 hover:text-gray-300">Contact</button>
+            </div>
+        </mat-toolbar>
+
+        <mat-list *ngIf="showMenu && screenWidth<768" class="bg-yellow-200 transition-all text-amber-400">
+            <mat-list-item routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page"
+                (click)="showMenu = false">Home</mat-list-item>
+            <mat-list-item routerLink="aboutUs" routerLinkActive="active" ariaCurrentWhenActive="page"
+                (click)="showMenu = false">About</mat-list-item>
+            <mat-list-item routerLink="services" routerLinkActive="active" ariaCurrentWhenActive="page"
+                (click)="showMenu = false">Services</mat-list-item>
+            <mat-list-item routerLink="ContactUs" routerLinkActive="active" ariaCurrentWhenActive="page"
+                (click)="showMenu = false">Contact</mat-list-item>
+        </mat-list>
+    </nav>
+    <router-outlet></router-outlet>
+    <span class="flex-auto"></span>
+    <footer class="max-h-52 bg-blue-300 overflow-auto px-4">
+        <app-footer></app-footer>
+    </footer>
+</div>
