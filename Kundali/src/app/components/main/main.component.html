@@ -1,7 +1,124 @@
-<div class="container p-4 flex flex-wrap justify-center">
-    <div class="top2 w-60 h-60 animate-[spin_11s_infinite_linear] border rounded-full">
-        <div class="img">
-            <img src="assets/zodiacAstro.png" alt="Astro 2">
+<div
+    class="container m-auto grid md:grid-rows-3 lg:grid-cols-3 gap-10 items-center content-center justify-center border border-red-950 w-full">
+    <div class="leftItem border border-red-400">
+        <form action="" [formGroup]="clientForm">
+            <div class="row">
+                <div class="col">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>name</mat-label>
+                        <input type="input" matInput formControlName="name" [errorStateMatcher]="matcher"
+                            placeholder="name">
+                        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                        <mat-error>Please enter a valid email address</mat-error>
+                        }
+                        @if (emailFormControl.hasError('required')) {
+                        <mat-error>Email is <strong>required</strong></mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>age</mat-label>
+                        <input type="input" matInput formControlName="age" [errorStateMatcher]="matcher"
+                            placeholder="age">
+                        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                        <mat-error>Please enter a valid email address</mat-error>
+                        }
+                        @if (emailFormControl.hasError('required')) {
+                        <mat-error>Email is <strong>required</strong></mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>country</mat-label>
+                        <input type="input" matInput formControlName="country" [errorStateMatcher]="matcher"
+                            placeholder="country">
+                        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                        <mat-error>Please enter a valid email address</mat-error>
+                        }
+                        @if (emailFormControl.hasError('required')) {
+                        <mat-error>Email is <strong>required</strong></mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>city</mat-label>
+                        <input type="input" matInput formControlName="city" [errorStateMatcher]="matcher"
+                            placeholder="city">
+                        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                        <mat-error>Please enter a valid email address</mat-error>
+                        }
+                        @if (emailFormControl.hasError('required')) {
+                        <mat-error>Email is <strong>required</strong></mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>state</mat-label>
+                        <input type="input" matInput formControlName="state" [errorStateMatcher]="matcher"
+                            placeholder="state">
+                        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                        <mat-error>Please enter a valid email address</mat-error>
+                        }
+                        @if (emailFormControl.hasError('required')) {
+                        <mat-error>Email is <strong>required</strong></mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>birthDate</mat-label>
+                        <input type="input" matInput formControlName="birthDate" [errorStateMatcher]="matcher"
+                            placeholder="birthDate">
+                        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                        <mat-error>Please enter a valid email address</mat-error>
+                        }
+                        @if (emailFormControl.hasError('required')) {
+                        <mat-error>Email is <strong>required</strong></mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>birthTime</mat-label>
+                        <input type="input" matInput formControlName="birthTime" [errorStateMatcher]="matcher"
+                            placeholder="birthTime">
+                        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                        <mat-error>Please enter a valid email address</mat-error>
+                        }
+                        @if (emailFormControl.hasError('required')) {
+                        <mat-error>Email is <strong>required</strong></mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <button mat-raised-button class="mx-2" color="primary" (click)="saveForm()">Submit</button>
+                <button mat-raised-button class="mx-2" color="accent" (click)="resetClientForm()">Reset Form</button>
+            </div>
+        </form>
+    </div>
+    <div class="container p-4 flex flex-wrap justify-center border border-red-400">
+        <div class="top2 w-60 h-60 animate-[spin_11s_infinite_linear] border rounded-full">
+            <div class="img">
+                <img src="assets/zodiacAstro.png" alt="Astro 2">
+            </div>
         </div>
     </div>
+    <div class="rightItem border border-red-400">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum assumenda aliquid asperiores ullam quia incidunt
+        sit. Ab officia, ipsam dolore voluptates harum perferendis aliquam non aut alias soluta nulla explicabo.
+    </div>
+
 </div>

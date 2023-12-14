@@ -65,6 +65,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kundali:build:production",
+            "proxyConfig": "src/proxy.conf.mjs"
+          },
           "configurations": {
             "production": {
               "buildTarget": "kundali:build:production"
