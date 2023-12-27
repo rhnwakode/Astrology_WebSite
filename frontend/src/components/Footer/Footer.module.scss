@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #061f31;
+  color: azure;
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer_content_info {
+  margin-top: 2px;
+}
+
+.footer_content_address {
+  margin-top: 2px;
+}
