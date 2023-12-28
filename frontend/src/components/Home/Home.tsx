@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Home.module.scss';
+import Form from '../Form/Form';
 const Home = () => {
   return (
     <main className={style.home}>
@@ -7,7 +8,7 @@ const Home = () => {
       <section className={style.hero_info}>
         <h3>HERO INFO SECTION</h3>
         <img src="./assets/astro_logo.jpg" style={{ width: '40%' }} />
-
+        <Form />
         <div>
           <h4>Heading1</h4>
           <p>

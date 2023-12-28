@@ -16,9 +16,15 @@ module.exports = {
     jest: true,
   },
   parserOptions: {
-    project: './tsconfig.json',
+    project: ['./tsconfig.json'],
+    tsconfigRootDir: __dirname,
   },
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
 };

@@ -1,0 +1,170 @@
+label {
+  margin-right: 50px;
+  min-width: 50px;
+  display: inline-block;
+}
+
+.suggestion_wrapper {
+  position: absolute;
+  top: 35px;
+  width: 200px;
+  min-height: 50px;
+  max-height: 80px;
+  list-style-type: none;
+  background-color: #34546d;
+  border: 1px solid red;
+  z-index: 2;
+  padding-left: 0;
+  overflow-y: auto;
+
+  li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+    padding: 4px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+  }
+}
+
+.form_wrapper {
+  border: 1px solid red;
+  width: 80%;
+  margin: auto;
+
+  input {
+    padding: 4px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px;
+
+    & .field_name {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    & .field_gender {
+      padding: 10px;
+
+      & > div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6px;
+        margin: 6px auto;
+      }
+
+      & input[type='radio'] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #999;
+        border-radius: 50%;
+        outline: none;
+        box-shadow: 0 0 5px #999;
+        transition: box-shadow 0.3s ease;
+      }
+
+      & input[type='radio']:before {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 60%;
+        margin: 20% auto;
+        border-radius: 50%;
+      }
+
+      & input[type='radio']:checked:before {
+        background: #999;
+      }
+
+      label {
+        margin-right: 30px;
+      }
+    }
+
+    & .field_date {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    & .field_time {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+
+      & .field_time_hrs {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      & .field_time_min {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      & .field_time_sec {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+    & .field_location {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+
+      & .field_country {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+      }
+
+      & .field_state {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+      }
+
+      & .field_city {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+      }
+    }
+
+    & .submit {
+      display: inline-block;
+
+      border: none;
+      padding: 5px 8px;
+      border-radius: 4px;
+      background-color: #34546d;
+      color: white;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-left: 10px;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
