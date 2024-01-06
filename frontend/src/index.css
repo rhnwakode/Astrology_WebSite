@@ -1,4 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100;400;500;900&display=swap');
+
 body {
   background-color: #111;
   color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #051937,
+    #09233d,
+    #132e42,
+    #203746,
+    #2e414a
+  );
+  /* background-image: radial-gradient(
+    circle 815px at 23.4% -21.8%,
+    rgba(9, 29, 85, 1) 0.2%,
+    rgba(0, 0, 0, 1) 100.2%
+  ); */
+  /* background-image: radial-gradient(
+    circle 1086px at 1.1% 96.2%,
+    rgba(1, 44, 66, 1) 0%,
+    rgba(163, 221, 253, 1) 53.6%
+  ); */
+  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: url('../public/assets/bg2.jpg'); */
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+  background-repeat: no-repeat;
+  background-size: contain;
 }

@@ -6,7 +6,8 @@
   background-color: #061f31;
   color: azure;
   gap: 20px;
-  padding: 20px;
+  padding: 60px;
+  margin-top: 20px;
 }
 
 .footer_content_info {
@@ -15,4 +16,12 @@
 
 .footer_content_address {
   margin-top: 2px;
+}
+
+@media (min-width: 769px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
 }

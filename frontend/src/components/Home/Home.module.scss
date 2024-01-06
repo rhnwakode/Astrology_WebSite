@@ -1,3 +1,146 @@
 .home {
-  // height: 100vh;
+  // height: 120vh;
+}
+
+.heading {
+  // max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+
+  img {
+    width: 24px;
+  }
+
+  h3.hero {
+    color: #002147;
+    font-family: 'Droid serif', serif;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 44px;
+    // margin: 0 0 12px;
+    text-align: center;
+    // -webkit-text-stroke: 0.25px white;
+  }
+}
+
+#heroImg {
+  box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  // width: 30%; /* adjust as needed */
+  height: auto;
+  /* adjust as needed */
+  img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    animation-name: rotateImg;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
+}
+
+.hero_info {
+  & .content {
+    width: 95%;
+    border: qpx solid rebeccapurple;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  h4 {
+    color: #7c795d;
+    font-family: 'Trocchi', serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0;
+  }
+
+  p {
+    color: #757479;
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-indent: 30px;
+    margin: 0;
+  }
+}
+
+@keyframes rotateImg {
+  0% {
+    rotate: 0deg;
+  }
+  // 10% {
+  //   rotate: 36deg;
+  // }
+  // 20% {
+  //   rotate: 72deg;
+  // }
+  // 30% {
+  //   rotate: 108deg;
+  // }
+  // 40% {
+  //   rotate: 144deg;
+  // }
+  // 50% {
+  //   rotate: 180deg;
+  // }
+  // 60% {
+  //   rotate: 216deg;
+  // }
+  // 70% {
+  //   rotate: 252deg;
+  // }
+  // 80% {
+  //   rotate: 288deg;
+  // }
+  // 90% {
+  //   rotate: 324deg;
+  // }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@media (min-width: 769px) {
+  .heading {
+    h3.hero {
+      font-size: 42px;
+      font-weight: 600;
+      word-spacing: 10px;
+      // border: 1px solid red;
+      // -webkit-text-stroke: 0.25px white;
+      // mix-blend-mode: color-dodge;
+      text-shadow: 1px 1px #f8f8ff;
+    }
+  }
+  #heroImg {
+    box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30%; /* adjust as needed */
+    /* adjust as needed */
+    padding: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }

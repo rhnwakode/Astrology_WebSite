@@ -8,6 +8,9 @@
   background-image: linear-gradient(90deg, #030e1d 0%, #34546d 100%);
   color: white;
   padding-bottom: 6px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 1px 3px 2px #34546d;
 
   img {
     width: 100px;
@@ -54,5 +57,11 @@
     &:hover::before {
       background-color: #34546d;
     }
+  }
+}
+
+@media (min-width: 769px) {
+  .card_wrapper {
+    width: 30%;
   }
 }

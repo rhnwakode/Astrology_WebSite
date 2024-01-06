@@ -10,7 +10,8 @@
     "prettier:check": "prettier \"src/**/*.{ts,tsx}\"",
     "start:dev": "cross-env NODE_ENV=development webpack serve",
     "test": "jest",
-    "test:watch": "jest --verbose --watchAll --no-cache --runInBand"
+    "test:watch": "jest --verbose --watchAll --no-cache --runInBand",
+    "typecheck": "tsc"
   },
   "author": "Rishabh",
   "license": "ISC",
